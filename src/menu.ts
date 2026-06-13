@@ -1,32 +1,72 @@
 export interface AppMenuItem {
-  id: string
-  label: string
-  path?: string
-  children?: AppMenuItem[]
+  id: string;
+  label: string;
+  path?: string;
+  children?: AppMenuItem[];
 }
 
 export const appMenu: AppMenuItem[] = [
   {
-    id: 'tutorials',
-    label: 'Tutorials',
+    id: "React",
+    label: "React Js",
     children: [
-      { id: 'counter', label: 'Counter Example', path: '/counter' },
-      { id: 'todo', label: 'Todo Example', path: '/todo' },
+      { id: "intoduction", label: "What is React js", path: "/react" },
+      { id: "features", label: "Features of React js", path: "/react/features" },
     ],
   },
   {
-    id: 'documentation',
-    label: 'Documentation',
+    id: "redux",
+    label: "Redux",
     children: [
-      {
-        id: 'redux',
-        label: 'Redux Guide',
-        children: [
-          { id: 'toolkit', label: 'Redux Toolkit', path: '/redux-guide/toolkit' },
-          { id: 'patterns', label: 'Redux Patterns', path: '/redux-guide/patterns' },
-        ],
-      },
-      { id: 'typescript', label: 'TypeScript Guide', path: '/typescript' },
+      { id: "intoduction", label: "What is Redux", path: "/redux" },
+      { id: "todo", label: "Todo Example", path: "/todo" },
     ],
   },
-]
+  {
+    id: "HTML",
+    label: "HTML",
+    children: [
+      { id: "intoduction", label: "What is HTML", path: "/counter" },
+      { id: "todo", label: "Todo Example", path: "/todo" },
+    ],
+  },
+  {
+    id: "CSS",
+    label: "CSS",
+    children: [
+      { id: "intoduction", label: "What is CSS", path: "/counter" },
+      { id: "todo", label: "Todo Example", path: "/todo" },
+    ],
+  },
+  {
+    id: "tutorials",
+    label: "Tutorials",
+    children: [
+      { id: "counter", label: "Counter Example", path: "/counter" },
+      { id: "todo", label: "Todo Example", path: "/todo" },
+    ],
+  },
+  {
+    id: "documentation",
+    label: "Documentation",
+    children: [
+      {
+        id: "redux",
+        label: "Redux Guide",
+        children: [
+          {
+            id: "toolkit",
+            label: "Redux Toolkit",
+            path: "/redux-guide/toolkit",
+          },
+          {
+            id: "patterns",
+            label: "Redux Patterns",
+            path: "/redux-guide/patterns",
+          },
+        ],
+      },
+      { id: "typescript", label: "TypeScript Guide", path: "/typescript" },
+    ],
+  },
+];

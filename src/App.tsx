@@ -6,6 +6,8 @@ import TodoTutorial from './components/TodoTutorial'
 import ReduxToolkitGuide from './pages/ReduxToolkitGuide'
 import ReduxPatternsGuide from './pages/ReduxPatternsGuide'
 import TypeScriptGuide from './pages/TypeScriptGuide'
+import ReactIntroDuction from './pages/React js/WhatIsReact'
+import FeaturesofReactJs from './pages/React js/FeaturesofReactJs'
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="counter" element={<CounterTutorial />} />
           <Route path="todo" element={<TodoTutorial />} />
+          <Route path="react">
+            <Route index element={<ReactIntroDuction />} />
+            <Route path="features" element={<FeaturesofReactJs />} />
+          </Route>
           <Route path="redux-guide">
             <Route path="toolkit" element={<ReduxToolkitGuide />} />
             <Route path="patterns" element={<ReduxPatternsGuide />} />
