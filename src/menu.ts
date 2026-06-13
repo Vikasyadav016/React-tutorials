@@ -11,7 +11,14 @@ export const appMenu: AppMenuItem[] = [
     label: "React Js",
     children: [
       { id: "intoduction", label: "What is React js", path: "/react" },
-      { id: "features", label: "Features of React js", path: "/react/features" },
+      {
+        id: "reactfeatures",
+        label: "Features of React js",
+        children: [
+          { id: "featuresoverview", label: "Features Overview", path: "/react/features" },
+          { id: "virtualdom", label: "Virtual DOM", path: "/react/features/virtual-dom" }
+        ]
+      },
       { id: "proscons", label: "Pros and Cons of React js", path: "/react/proscons" },
     ],
   },

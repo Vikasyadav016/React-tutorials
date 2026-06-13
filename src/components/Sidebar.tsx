@@ -59,8 +59,8 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
-        <h2>Menu</h2>
-        <p>Navigate tutorials, examples, and guides.</p>
+        <h4>Navigate and start learning</h4>
+        {/* <p>Navigate tutorials, examples, and guides.</p> */}
       </div>
       <nav>{renderMenu(appMenu)}</nav>
     </aside>

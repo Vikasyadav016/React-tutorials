@@ -10,6 +10,7 @@ import ReactIntroDuction from './pages/React js/WhatIsReact'
 import FeaturesofReactJs from './pages/React js/FeaturesofReactJs'
 import ComparisonPage from './pages/ComparisonPage'
 import AdvantagesandDisadvantagesOfReactJs from './pages/React js/ProsAndConsOfReactJs'
+import VirtualDom from './pages/React js/FeaturesOfReact/VirtualDom'
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
           <Route path="todo" element={<TodoTutorial />} />
           <Route path="react">
             <Route index element={<ReactIntroDuction />} />
-            <Route path="features" element={<FeaturesofReactJs />} />
+            <Route path="features">
+              <Route index element={<FeaturesofReactJs />} />
+              <Route path="virtual-dom" element={<VirtualDom />} />
+            </Route>
             <Route path="proscons" element={<AdvantagesandDisadvantagesOfReactJs />} />
           </Route>
           <Route path="redux-guide">

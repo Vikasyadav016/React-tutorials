@@ -459,3 +459,72 @@ code {
 .difference-table tbody tr:nth-child(even) {
   background: #f8fafc;
 }
+
+/* VS Code-like code block styling */
+pre > code.code-block {
+  display: block;
+  position: relative;
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 18px 20px;
+  padding-top: 30px;
+  border-radius: 8px;
+  overflow: auto;
+  white-space: pre;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.02), 0 8px 24px rgba(2,6,23,0.45);
+}
+
+/* small language label in the top-right similar to VS Code tab */
+pre > code.code-block::before {
+  content: attr(data-lang);
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: rgba(255,255,255,0.03);
+  color: #c7d2fe;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* subtle gutter look (visual only) */
+pre > code.code-block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* ensure pre wrapper doesn't inherit unexpected styles */
+pre {
+  margin: 0 0 16px 0;
+}
+
+/* make code inside tags wrap nicely on small screens */
+pre > code.code-block {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.code-block {
+  background-color: #000;
+  color: #f8f8f2;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid #333;
+}
