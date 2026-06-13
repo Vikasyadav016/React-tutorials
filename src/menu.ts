@@ -16,7 +16,8 @@ export const appMenu: AppMenuItem[] = [
         label: "Features of React js",
         children: [
           { id: "featuresoverview", label: "Features Overview", path: "/react/features" },
-          { id: "virtualdom", label: "Virtual DOM", path: "/react/features/virtual-dom" }
+          { id: "virtualdom", label: "Virtual DOM", path: "/react/features/virtual-dom" },
+          { id: "jsx", label: "JSX", path: "/react/features/jsx" }
         ]
       },
       { id: "proscons", label: "Pros and Cons of React js", path: "/react/proscons" },

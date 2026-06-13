@@ -11,6 +11,7 @@ import FeaturesofReactJs from './pages/React js/FeaturesofReactJs'
 import ComparisonPage from './pages/ComparisonPage'
 import AdvantagesandDisadvantagesOfReactJs from './pages/React js/ProsAndConsOfReactJs'
 import VirtualDom from './pages/React js/FeaturesOfReact/VirtualDom'
+import JSX from './pages/React js/FeaturesOfReact/JSX'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="features">
               <Route index element={<FeaturesofReactJs />} />
               <Route path="virtual-dom" element={<VirtualDom />} />
+              <Route path="jsx" element={<JSX />} />
             </Route>
             <Route path="proscons" element={<AdvantagesandDisadvantagesOfReactJs />} />
           </Route>
