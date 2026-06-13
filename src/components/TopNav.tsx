@@ -19,6 +19,9 @@ function TopNav() {
         <NavLink to="/redux-guide/toolkit" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
           Redux Guide
         </NavLink>
+        <NavLink to="/comparison" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>
+          Comparison
+        </NavLink>
       </nav>
     </header>
   )

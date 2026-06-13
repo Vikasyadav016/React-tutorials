@@ -8,6 +8,8 @@ import ReduxPatternsGuide from './pages/ReduxPatternsGuide'
 import TypeScriptGuide from './pages/TypeScriptGuide'
 import ReactIntroDuction from './pages/React js/WhatIsReact'
 import FeaturesofReactJs from './pages/React js/FeaturesofReactJs'
+import ComparisonPage from './pages/ComparisonPage'
+import AdvantagesandDisadvantagesOfReactJs from './pages/React js/ProsAndConsOfReactJs'
 
 function App() {
   return (
@@ -20,12 +22,14 @@ function App() {
           <Route path="react">
             <Route index element={<ReactIntroDuction />} />
             <Route path="features" element={<FeaturesofReactJs />} />
+            <Route path="proscons" element={<AdvantagesandDisadvantagesOfReactJs />} />
           </Route>
           <Route path="redux-guide">
             <Route path="toolkit" element={<ReduxToolkitGuide />} />
             <Route path="patterns" element={<ReduxPatternsGuide />} />
           </Route>
           <Route path="typescript" element={<TypeScriptGuide />} />
+          <Route path="comparison" element={<ComparisonPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

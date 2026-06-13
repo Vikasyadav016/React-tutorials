@@ -12,6 +12,7 @@ export const appMenu: AppMenuItem[] = [
     children: [
       { id: "intoduction", label: "What is React js", path: "/react" },
       { id: "features", label: "Features of React js", path: "/react/features" },
+      { id: "proscons", label: "Pros and Cons of React js", path: "/react/proscons" },
     ],
   },
   {
@@ -67,6 +68,7 @@ export const appMenu: AppMenuItem[] = [
         ],
       },
       { id: "typescript", label: "TypeScript Guide", path: "/typescript" },
+      { id: "comparison", label: "Comparison Table", path: "/comparison" },
     ],
   },
 ];
